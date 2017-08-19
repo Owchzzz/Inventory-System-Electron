@@ -1,0 +1,79 @@
+{
+  "name": "inventory-system",
+  "productName": "inventory-system",
+  "version": "1.0.0",
+  "description": "My Electron application description",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "lint": "tslint src"
+  },
+  "keywords": [],
+  "author": "Richard",
+  "license": "MIT",
+  "config": {
+    "forge": {
+      "make_targets": {
+        "win32": [
+          "squirrel"
+        ],
+        "darwin": [
+          "zip"
+        ],
+        "linux": [
+          "deb",
+          "rpm"
+        ]
+      },
+      "electronPackagerConfig": {
+        "packageManager": "npm"
+      },
+      "electronWinstallerConfig": {
+        "name": "inventory_system"
+      },
+      "electronInstallerDebian": {},
+      "electronInstallerRedhat": {},
+      "github_repository": {
+        "owner": "",
+        "name": ""
+      },
+      "windowsStoreConfig": {
+        "packageName": "",
+        "name": "inventorysystem"
+      }
+    }
+  },
+  "dependencies": {
+    "@angular/animations": "^4.3.3",
+    "@angular/cdk": "^2.0.0-beta.8",
+    "@angular/common": "^4.3.3",
+    "@angular/compiler": "^4.3.3",
+    "@angular/compiler-cli": "^4.3.3",
+    "@angular/core": "^4.3.3",
+    "@angular/forms": "^4.3.3",
+    "@angular/http": "^4.3.3",
+    "@angular/material": "^2.0.0-beta.8",
+    "@angular/platform-browser": "^4.3.3",
+    "@angular/platform-browser-dynamic": "^4.3.3",
+    "@angular/platform-server": "^4.3.3",
+    "@angular/router": "^4.3.3",
+    "@types/electron": "^1.4.30",
+    "bootstrap": "^4.0.0-alpha.6",
+    "electron-compile": "^6.4.1",
+    "electron-devtools-installer": "^2.0.1",
+    "reflect-metadata": "^0.1.9",
+    "tslib": "^1.4.0",
+    "typescript": "^2.4.2",
+    "zone.js": "^0.7.4"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "electron-prebuilt-compile": "1.6.11",
+    "tslint": "^4.2.0",
+    "typescript": "^2.1.6"
+  }
+}

@@ -1,0 +1,75 @@
+<div class="window">
+
+  <!-- .toolbar-header sits at the top of your app -->
+  <header class="toolbar toolbar-header" style="-webkit-app-region:drag;">
+    <div class="padded-more">
+      <h1 class="title">Bearzu Inventory Management System v1.0.0
+        <div class="pull-right app_icon_bars" style="-webkit-app-region:no-drag;">
+          <a class="clickable" (click)="minimizeApp();">
+            <span class="icon icon-minus"> </span>
+          </a>
+          <a class="clickable" (click)="maximizeApp();">
+            <span class="icon icon-doc-landscape"> </span>
+          </a>
+          <a class="clickable" (click)="closeApp();">
+            <span class="icon icon-cancel-circled"> </span>
+          </a>
+
+        </div>
+      </h1>
+
+    </div>
+  </header>
+
+  <!-- Your app's content goes inside .window-content -->
+  <div class="window-content">
+    <div class="pane-group">
+      <div class="pane pane-sm sidebar">
+        <nav class="nav-group">
+          <h5 class="nav-group-title">Booking and Reservation</h5>
+          <span routerLink="/home" routerLinkActive="active" class="nav-group-item">
+            <span class="icon icon-home"></span>
+              Booking
+          </span>
+          <span routerLink="/home" routerLinkActive="active" class="nav-group-item">
+            <span class="icon icon-home"></span>
+              Reservation
+          </span>
+        </nav>
+        <nav class="nav-group">
+          <h5 class="nav-group-title">Client Data</h5>
+
+          <span routerLink="/transactions" routerLinkActive="active" class="nav-group-item">
+            <span class="icon icon-book-open"></span>
+              Customer Data
+          </span>
+
+        </nav>
+
+        <nav class="nav-group">
+          <h5 class="nav-group-title">Reports</h5>
+
+          <span routerLink="/transactions" routerLinkActive="active" class="nav-group-item">
+            <span class="icon icon-book-open"></span>
+              Daily Reports
+          </span>
+
+        </nav>
+        <nav class="nav-group">
+          <h5 class="nav-group-title">Administration</h5>
+          <span routerLink="/transactions" routerLinkActive="active" class="nav-group-item">
+            <span class="icon icon-users"></span>
+            User Administration
+          </span>
+        </nav>
+
+      </div>
+
+      <div class="pane">
+        <div class="padded-more">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

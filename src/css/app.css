@@ -1,0 +1,13 @@
+.clickable {
+  cursor:pointer;
+}
+
+.app_icon_bars .icon{
+  display:block;
+  width:12px;
+  height:12px;
+  margin:0px 7px;
+  font-size:12px;
+  float:left;
+  cursor:pointer;
+}
